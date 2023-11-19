@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(58, 24, 250, 0.4)), url(bg.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 20px 0px 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: center;
+}
+
+div.container {
+  background-color: #fff;
+  border-radius: .5em;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  background-color: #90EE90;
+  color: white;
+  padding: 0.5em 1em 0.5em 1em;
+  font-size: 1em;
+}
+
+h1 {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+  font-family: 'Limelight', cursive;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+p {
+  margin: 0;
+}
+
+form {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+
+button{
+  padding: 0.4em 1.3em 0.4em 1.3em;
+  font-size: 1.3em;
+  color: white;
+  background-color: #087f23;
+  border-color: #087f23;
+  border-radius: .2em;
+  margin: 0 auto;
+  display: block;
+}
+
+label, button, p.label {
+  font-family: 'Limelight', cursive;
+}
+
+
+
+input, textarea, select {
+  font-size: 1em;
+  padding: 10px 5px 10px;
+  border-radius: 2px;
+}
+
+input[type="text"], input[type="email"] {
+  flex: 0 1 250px;
+}
+
+input[type="number"] {
+  flex: 0 0 6em;
+}
+
+label.wide {
+  flex: 1 1 140px;
+}
+
+
+input[type="checkbox"] + label, div.radio-control label {
+  font-family: 'Open Sans', sans-serif;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.small-row {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+div.radio-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.justify-sb {
+  justify-content: space-between;
+}
+
+textarea {
+  width: 100%;
+}
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <A HreF="\index.html">HOME||</A>
+    <A HreF="\contactus.html">CONTACT US||</A>
+    <A HreF="\joinus.html">JOIN US</A>
+    <div class="container">
+        <div class="header">
+          <h1 id="title">JOIN US</h1>
+        <p id="description">You are making a big change by joining our website</p>
+        </div>
+        
+        <form id="survey-form">
+          <div class="row">
+              <label class="wide" id="name-label" for="name">Name:</label>
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="row">
+              <label class="wide" id="email-label" for="email">Email:</label>
+              <input type="email"  id="email" placeholder="Your Email" required>
+            </div>
+          
+          <div class="row">
+            <label id="number-label" class="wide" class="wide" for="rate">Rate our service level from 1 to 10:</label>
+            <input id="number" type="number" min=1 max=10 id="number" placeholder="Your rate">
+           </div>
+          <div class="row m-t-20">
+            <p class="label">How much you want to donate for our organisation?</p>
+          </div>
+          <!-- <div class="small-row justify-sb">
+            <p>Not at all likely</p>
+            <p>Extremely likely</p>
+          </div> -->
+          
+          <div class="small-row justify-sb">
+            <div class="radio-control">
+              <input type="radio" id="recommend-1" name="recommend" value=1>
+              <label for="recommend-1">1K</label>
+            </div>
+            <div class="radio-control">
+              <input type="radio" id="recommend-2" name="recommend" value=2>
+              <label for="recommend-2">2K</label>
+            </div>
+            <div class="radio-control">
+              <input type="radio" id="recommend-3" name="recommend" value=3>
+              <label for="recommend-3">3K</label>
+            </div>
+            <div class="radio-control">
+              <input type="radio" id="recommend-4" name="recommend" value=4>
+              <label for="recommend-4">4K</label>
+            </div>
+            <div class="radio-control">
+              <input type="radio" id="recommend-5" name="recommend" value=5>
+              <label for="recommend-5">5K</label>
+            </div>
+            <div class="radio-control">
+              <input type="radio" id="recommend-6" name="recommend" value=6>
+              <label for="recommend-6">6K</label>
+            </div>
+            <div class="radio-control">
+              <input type="radio" id="recommend-7" name="recommend" value=7>
+              <label for="recommend-7">7K</label>
+            </div>
+            <div class="radio-control">
+              <input type="radio" id="recommend-8" name="recommend" value=8>
+              <label for="recommend-8">8K</label>
+            </div>
+            <div class="radio-control">
+              <input type="radio" id="recommend-9" name="recommend" value=9>
+              <label for="recommend-9">9K</label>
+            </div>
+            <div class="radio-control">
+              <input type="radio" id="recommend-10" name="recommend" value=10>
+              <label for="recommend-10">10K</label>
+            </div> 
+          </div>
+          
+          <div class="row m-t-20">
+            <label for="comments">Why do you want to join us?</label>
+          </div>
+          
+          <div class="row">
+            <textarea rows="6" id="comments" placeholder="Write your comments here..."></textarea>
+          </div>
+      
+          <div class="row">
+            <button id="submit" type="submit">Submit</button>
+          </div>
+      
+          
+        </form>
+      </div>
+</body>
+</html>

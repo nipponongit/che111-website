@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+      #contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(58, 24, 250, 0.4)), url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+  }
+  form {
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .input-group {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .input_contact {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+  }
+  
+  label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+  }
+  
+  #submit {
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  input:focus~label,
+  input:valid~label,
+  textarea:focus~label,
+  textarea:valid~label {
+    top: -35px;
+    font-size: 14px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .row .input-group {
+    flex-basis: 48%;
+  }
+  
+  .address {
+    padding: 2px 2px 2px 2px;
+    margin-right: 200px;
+  }
+  
+  .box5 {
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    color: #fff;
+  
+  }
+    </style>
+</head>
+<body>
+  <A HreF="\index.html">HOME |</A></th>
+    <th><A HreF="\contactus.html">CONTACT US   |</A></th>
+    <th><A HreF="\joinus.html">JOIN US</A>
+    <section id="contact">
+        <div class="address">
+          <div class="box5"><i class="fa-sharp fa-solid fa-location-dot"></i> Innovation studio, LPU, Jalandhar</div>
+          <div class="box5"><i class="fa-solid fa-envelope"></i> iamnippon2974@gmail.com</div>
+          <div class="box5"><i class="fa-solid fa-phone"></i> +91 9060272471</div>
+          <div class="box5"><i class="fa-solid fa-clock"></i> Mon-Fri 8:00AM to 5:00PM</div>
+        </div>
+      <form method="POST" name="google-sheet">
+        <div class="row">
+        <div class="input-group">
+          <input class="input_contact" type="text" id="name" name="Name" required>
+          <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+        </div>
+        <div class="input-group">
+          <input class="input_contact"  type="text" id="number" name="Number" required>
+          <label for="number"><i class="fa-solid fa-phone"></i> Phone No.</label>
+        </div>
+        </div>
+        <div class="input-group">
+          <input class="input_contact" type="email" id="email" name="Email" required>
+          <label for="email"><i class="fa-solid fa-envelope"></i> Email Id</label>
+        </div>
+       
+        <div class="input-group">
+          <textarea class="input_contact" id="message" rows="8" name="Message" required></textarea>
+          <label for="message"><i class="fa-solid fa-comment"></i> Your message</label>
+        </div>
+        <input type="submit" id="submit" value="Submit" name="submit">
+      </form>
+      </section>
+</body>
+</html>
